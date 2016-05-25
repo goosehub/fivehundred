@@ -4,15 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>New</title>
+	<title><?php echo $code['title']; ?></title>
 	<link rel="stylesheet" href="resources/libraries/highlightjs-9.4.0.min.css">
-	<link rel="stylesheet" href="resources/styles/<?php echo str_replace(' ', '-', $syntaxes[$current_syntax]); ?>.css">
+	<link rel="stylesheet" href="resources/styles/<?php echo strtolower(str_replace(' ', '-', $syntaxes[$current_syntax])); ?>.css">
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
 
 <pre><code>
-	<?php var_dump($_POST); ?>
+<?php if ($validation_errors) { echo $validation_errors;  } else { echo htmlentities($code['code']); } ?>
 </code></pre>
 
 <script src="resources/libraries/jquery-2.2.0.min.js"></script>

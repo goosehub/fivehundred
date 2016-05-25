@@ -14,7 +14,7 @@ $(document).ready(function() {
     // Form logic
     $('form').hide();
     var form_on = false;
-    $('body').on('click', '#new', function() {
+    $('body').on('click', '#create', function() {
         if (form_on) {
             form_on = false;
             $('form').hide();
