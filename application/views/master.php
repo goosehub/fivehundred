@@ -22,29 +22,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	&lt;/head&gt;
 	&lt;body&gt;
 
-	&lt;button&gt;
-		<a id="new">New</a>
-		<form action="new">
-			<label for="">Code</label>
-			<textarea name="code"></textarea>
-			<label pattern="[a-zA-Z0-9] for="">Title</label>
-			<input type="text" name="title"/>
-			<label for="">Language</label>
-			<select name="language">
-				<option value="example">Example</option>
-			</select>
-			<label for="">Syntax</label>
-			<select name="syntax">
-				<option value="example">Example</option>
-			</select>
-			<label for="">Submit</label>
-			<input type="submit" value="Submit"/>
-		</form>
-	&lt;/button&gt;
-
+	&lt;span id=&quot;new&quot;&gt;<span id="new">New</span>&lt;/span&gt;
+	<form action="new" method="post">
+		<label for="">Code</label>
+		<textarea name="code"></textarea>
+		<label for="">Title</label>
+		<input type="text" name="title"/>
+		<label for="">Language</label>
+		<select name="language">
+			<option value="example">Example</option>
+		</select>
+		<label for="">Syntax</label>
+		<select name="syntax">
+			<option value="example">Example</option>
+		</select>
+		<label for="">Submit</label>
+		<input type="submit" value="Submit"/>
+	</form>
 	&lt;pre&gt;&lt;code&gt;
-		<a href="example">example</a>
+		&lt;a href="example"&gt;<a href="example">example</a>&lt;/a&gt;
 	&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;a href="https://github.com/goosehub/fivehundred"&gt;<a href="https://github.com/goosehub/fivehundred">GitHub</a>&lt;/a&gt;
 
 	&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;
 	&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;

@@ -1,11 +1,11 @@
 body {
     background: #444;
 }
-a {
+a, #new {
     color: #ddd;
     text-decoration: none;
 }
-a:hover {
+a:hover, #new:hover {
     text-decoration: underline;
 }
 #create {

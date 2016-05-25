@@ -6,4 +6,8 @@ class Master extends CI_Controller {
 	{
 		$this->load->view('master');
 	}
+	public function new_code()
+	{
+		$this->load->view('new');
+	}
 }
