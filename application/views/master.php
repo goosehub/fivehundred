@@ -38,6 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<?php } ?>&lt;/code&gt;&lt;/pre&gt;
 
 	&lt;a href="https://github.com/goosehub/fivehundred"&gt;<a href="https://github.com/goosehub/fivehundred">GitHub</a>&lt;/a&gt;
+	&lt;a href="mailto:goosepostbox@gmail.com"&gt;<a href="mailto:goosepostbox@gmail.com">goosepostbox@gmail.com</a>&lt;/a&gt;
 
 	&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;
 	&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;
