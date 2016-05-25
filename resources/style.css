@@ -8,3 +8,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
+#create {
+    cursor: pointer;
+}
