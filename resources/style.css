@@ -1,8 +1,8 @@
 body {
-    background: #444;
+    background: #000;
 }
 a, #new {
-    color: #ddd;
+    color: inherit;
     text-decoration: none;
 }
 a:hover, #new:hover {

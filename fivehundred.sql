@@ -30,8 +30,6 @@ CREATE TABLE IF NOT EXISTS `code` (
   `id` int(10) unsigned NOT NULL,
   `code` text NOT NULL,
   `title` varchar(256) NOT NULL,
-  `language` varchar(256) NOT NULL,
-  `syntax` varchar(256) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

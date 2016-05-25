@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>Five Hundred Internal Server Error</title>
 	<link rel="stylesheet" href="resources/libraries/highlightjs-9.4.0.min.css">
-	<link rel="stylesheet" href="resources/styles/dark.css">
+	<link rel="stylesheet" href="resources/styles/<?php echo str_replace(' ', '-', $syntaxes[$current_syntax]); ?>.css">
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		&lt;meta charset=&quot;utf-8&quot;&gt;
 		&lt;title&gt;Five Hundred Internal Server Error&lt;/title&gt;
 		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/libraries/highlightjs-9.4.0.min.css&quot;&gt;
-		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/dark.css&quot;&gt;
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/<?php echo str_replace(' ', '-', $syntaxes[$current_syntax]); ?>.css&quot;&gt;
 		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/style.css&quot;&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
@@ -28,19 +28,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<textarea name="code"></textarea>
 		<label for="">Title</label>
 		<input type="text" name="title"/>
-		<label for="">Language</label>
-		<select name="language">
-			<option value="example">Example</option>
-		</select>
-		<label for="">Syntax</label>
-		<select name="syntax">
-			<option value="example">Example</option>
-		</select>
-		<label for="">Submit</label>
 		<input type="submit" value="Submit"/>
 	</form>
 	&lt;pre&gt;&lt;code&gt;
-		&lt;a href="example"&gt;<a href="example">example</a>&lt;/a&gt;
+		&lt;a href="404"&gt;<a href="404">404</a>&lt;/a&gt;
 	&lt;/code&gt;&lt;/pre&gt;
 
 	&lt;a href="https://github.com/goosehub/fivehundred"&gt;<a href="https://github.com/goosehub/fivehundred">GitHub</a>&lt;/a&gt;

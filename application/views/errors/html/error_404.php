@@ -6,7 +6,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>404 Page Not Found</title>
 	<link rel="stylesheet" href="resources/libraries/highlightjs-9.4.0.min.css">
-	<link rel="stylesheet" href="resources/styles/dark.css">
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>

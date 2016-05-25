@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>New</title>
 	<link rel="stylesheet" href="resources/libraries/highlightjs-9.4.0.min.css">
-	<link rel="stylesheet" href="resources/styles/dark.css">
+	<link rel="stylesheet" href="resources/styles/<?php echo str_replace(' ', '-', $syntaxes[$current_syntax]); ?>.css">
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
