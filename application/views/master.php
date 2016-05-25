@@ -5,32 +5,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Five Hundred Internal Server Error</title>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+	<link rel="stylesheet" href="resources/libraries/highlightjs-9.4.0.min.css">
 	<link rel="stylesheet" href="resources/styles/dark.css">
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
-<pre><code id="code" class="code">
+<pre><code>
 	&lt;!DOCTYPE html&gt;
 	&lt;html lang=&quot;en&quot;&gt;
 	&lt;head&gt;
 		&lt;meta charset=&quot;utf-8&quot;&gt;
 		&lt;title&gt;Five Hundred Internal Server Error&lt;/title&gt;
-		&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-		&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css&quot;&gt;
-		&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/libraries/highlightjs-9.4.0.min.css&quot;&gt;
 		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/dark.css&quot;&gt;
 		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/style.css&quot;&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
 
+	&lt;pre&gt;&lt;code&gt;
+		<a href="example">example</a>
+	&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;
 	&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 	&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>
 
+<script src="resources/libraries/jquery-2.2.0.min.js"></script>
+<script src="resources/libraries/highlightjs-9.4.0.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
