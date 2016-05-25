@@ -10,7 +10,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
-
 <pre><code>
 	&lt;!DOCTYPE html&gt;
 	&lt;html lang=&quot;en&quot;&gt;
@@ -46,7 +45,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>
-
 <script src="resources/libraries/jquery-2.2.0.min.js"></script>
 <script src="resources/libraries/highlightjs-9.4.0.min.js"></script>
 <script src="resources/script.js"></script>

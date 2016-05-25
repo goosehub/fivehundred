@@ -2,12 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Master extends CI_Controller {
-
 	function __construct() {
 	    parent::__construct();
         $this->load->model('master_model', '', TRUE);
 	}
-
 	public function index()
 	{
         $data['codes'] = $this->master_model->load_code();
@@ -29,14 +27,14 @@ class Master extends CI_Controller {
 	}
 	public function create_code()
 	{
+    	$code = $data['code']['code'] = $this->input->post('code');
+    	$title = $data['code']['title'] = $this->input->post('title');
 	    $this->load->library('form_validation');
 	    $this->form_validation->set_rules('code', 'code', 'required|max_length[1000000]');
 	    $this->form_validation->set_rules('title', 'title', 'trim|alpha_dash|required|max_length[64]');
 	    if ($this->form_validation->run() == FALSE) {
 	        $data['validation_errors'] = validation_errors();
 	    } else {
-        	$code = $data['code']['code'] = $this->input->post('code');
-        	$title = $data['code']['title'] = $this->input->post('title');
 	        $check_for_existing = $this->master_model->get_code($title);
 	        if ($check_for_existing) {
 			    $data['validation_errors'] = 'This title is already taken';

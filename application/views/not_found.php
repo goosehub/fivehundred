@@ -18,7 +18,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  &lt;h1&gt;404 - Not Found&lt;/h1&gt;
 	&lt;/body&gt;&lt;/html&gt;
 </code></pre>
-
 <script src="resources/libraries/jquery-2.2.0.min.js"></script>
 <script src="resources/libraries/highlightjs-9.4.0.min.js"></script>
 <script src="resources/script.js"></script>

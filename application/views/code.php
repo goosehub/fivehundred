@@ -10,11 +10,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
-
 <pre><code>
 <?php if ($validation_errors) { echo $validation_errors;  } else { echo htmlentities($code['code']); } ?>
 </code></pre>
-
 <script src="resources/libraries/jquery-2.2.0.min.js"></script>
 <script src="resources/libraries/highlightjs-9.4.0.min.js"></script>
 <script src="resources/script.js"></script>
