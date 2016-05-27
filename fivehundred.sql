@@ -1,6 +1,3 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
 CREATE TABLE IF NOT EXISTS `code` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `code` text NOT NULL,

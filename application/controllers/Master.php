@@ -32,6 +32,7 @@ class Master extends CI_Controller {
 	    $this->load->library('form_validation');
 	    $this->form_validation->set_rules('code', 'code', 'required|max_length[1000000]');
 	    $this->form_validation->set_rules('title', 'title', 'trim|alpha_dash|required|max_length[64]');
+	    $data['validation_errors'] = false;
 	    if ($this->form_validation->run() == FALSE) {
 	        $data['validation_errors'] = validation_errors();
 	    } else {

@@ -8,6 +8,9 @@ a, #create {
 a:hover, #create:hover {
     text-decoration: underline;
 }
+form {
+    display: none;
+}
 #create {
     cursor: pointer;
 }
