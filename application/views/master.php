@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<textarea name="code"></textarea>
 		<label for="">Title [a-zA-Z0-9-_]</label>
 		<input type="text" name="title"/>
-
+		
 		<input type="submit" value="Submit"/>
 	</form>
 
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<a href="http://fivehundred.io">&lt;a href="http://fivehundred.io"&gt;More&lt;/a&gt;</a>
 
-	<a target="_blank" href="https://github.com/isagalaev/highlight.js/tree/master/src/styles">&lt;a href="http://fivehundred.io?syntax=<?php echo $syntax; ?>"&gt;Use a query string to set the syntax style&lt;/a&gt;</a>
+	<a target="_blank" href="http://fivehundred.io/resources/styles/">&lt;a href="http://fivehundred.io?syntax=<?php echo $syntax; ?>"&gt;Use a query string to set the syntax style&lt;/a&gt;</a>
 
 	<a target="_blank" href="http://gooseweb.io">&lt;a href="http://gooseweb.io"&gt;By Goose&lt;/a&gt;</a>
 	<a target="_blank" href="https://github.com/goosehub/fivehundred">&lt;a href="https://github.com/goosehub/fivehundred"&gtGitHub&lt;/a&gt;</a>

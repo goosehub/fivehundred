@@ -1,16 +1,16 @@
 body {
     background: #000;
 }
-a, #create {
+a {
     color: inherit;
     text-decoration: none;
+}
+#create {
+    cursor: pointer;
 }
 a:hover, #create:hover {
     text-decoration: underline;
 }
 form {
     display: none;
-}
-#create {
-    cursor: pointer;
 }
