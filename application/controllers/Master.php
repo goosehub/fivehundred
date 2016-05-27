@@ -9,15 +9,13 @@ class Master extends CI_Controller {
 	public function index()
 	{
         $data['codes'] = $this->master_model->load_code();
-		$data['syntaxes'] = $this->list_syntaxes();
-		$data['current_syntax'] = array_rand($data['syntaxes']);
+		$data['syntax'] = $this->get_syntax();
 		$this->load->view('master', $data);
 	}
 	public function get_code($title)
 	{
         $data['code'] = $this->master_model->get_code($title);
-		$data['syntaxes'] = $this->list_syntaxes();
-		$data['current_syntax'] = array_rand($data['syntaxes']);
+		$data['syntax'] = $this->get_syntax();
 	    $data['validation_errors'] = false;
         if (!$data['code']) {
 			$this->load->view('not_found', $data);
@@ -32,24 +30,28 @@ class Master extends CI_Controller {
 	    $this->load->library('form_validation');
 	    $this->form_validation->set_rules('code', 'code', 'required|max_length[1000000]');
 	    $this->form_validation->set_rules('title', 'title', 'trim|alpha_dash|required|max_length[64]');
+		$data['syntax'] = $this->get_syntax();
 	    $data['validation_errors'] = false;
 	    if ($this->form_validation->run() == FALSE) {
 	        $data['validation_errors'] = validation_errors();
-	    } else {
-	        $check_for_existing = $this->master_model->get_code($title);
-	        if ($check_for_existing) {
-			    $data['validation_errors'] = 'This title is already taken';
-	        } else {
-	        	$query_action = $this->master_model->create_code($code, $title);
-	        }
+			$this->load->view('code', $data);
+			return false;
+	    }
+        $check_for_existing = $this->master_model->get_code($title);
+        if ($check_for_existing) {
+		    $data['validation_errors'] = 'This title is already taken';
+			$this->load->view('code', $data);
+			return false;
 		}
-		$data['syntaxes'] = $this->list_syntaxes();
-		$data['current_syntax'] = array_rand($data['syntaxes']);
-		$this->load->view('code', $data);
+    	$query_action = $this->master_model->create_code($code, $title);
+    	header('Location: ' . $title);
 	}
-	public function list_syntaxes()
+	public function get_syntax()
 	{
-		return [
+		if (isset($_GET['syntax'])) {
+			return $_GET['syntax'];
+		}
+		$syntaxes = [
 			'Agate',
 			'Androidstudio',
 			'Arduino Light',
@@ -123,5 +125,9 @@ class Master extends CI_Controller {
 			'Xt 256',
 			'Zenburn'
 		];
+		$current_syntax_index = array_rand($syntaxes);
+		$syntax_name = $syntaxes[$current_syntax_index];
+		$syntax = strtolower(str_replace(' ', '-', $syntax_name));
+		return $syntax;
 	}
 }

@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>404 Page Not Found</title>
 	<link rel="stylesheet" href="resources/libraries/highlightjs-9.4.0.min.css">
-	<link rel="stylesheet" href="resources/styles/<?php echo strtolower(str_replace(' ', '-', $syntaxes[$current_syntax])); ?>.css">
+	<link rel="stylesheet" href="resources/styles/<?php echo $syntax; ?>.css">
 	<link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
