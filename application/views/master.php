@@ -16,13 +16,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	&lt;head&gt;
 		&lt;meta charset=&quot;utf-8&quot;&gt;
 		&lt;title&gt;Five Hundred Internal Server Error&lt;/title&gt;
-		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/libraries/highlightjs-9.4.0.min.css&quot;&gt;
-		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/<?php echo $syntax; ?>.css&quot;&gt;
-		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/style.css&quot;&gt;
+		<a target="_blank" href="resources/libraries/highlightjs-9.4.0.min.css">&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/libraries/highlightjs-9.4.0.min.css&quot;&gt;</a>
+		<a target="_blank" href="resources/styles/<?php echo $syntax; ?>.css">&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/<?php echo $syntax; ?>.css&quot;&gt;</a>
+		<a target="_blank" href="resources/style.css">&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/style.css&quot;&gt;</a>
 	&lt;/head&gt;
 	&lt;body&gt;
 
-	&lt;span id=&quot;create&quot;&gt;<span id="create">create</span>&lt;/span&gt;
+	<span id="create">&lt;span id=&quot;create&quot;&gt;create&lt;/span&gt;</span>
 	<form action="create" method="post">
 		<label for="">Code</label>
 		<textarea name="code"></textarea>
@@ -34,18 +34,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	&lt;pre&gt;&lt;code&gt;
 	<?php foreach ($codes as $code) { ?>
-		&lt;a href="<?php echo $code['title']; ?>"&gt;<a href="<?php echo $code['title']; ?>"><?php echo $code['title']; ?></a>&lt;/a&gt;
+		<a href="<?php echo $code['title']; ?>">&lt;a href="<?php echo $code['title']; ?>"&gt;<?php echo $code['title']; ?>&lt;/a&gt;</a>
 	<?php } ?>&lt;/code&gt;&lt;/pre&gt;
 
-	&lt;a href="http://fivehundred.io?syntax=<?php echo $syntax; ?>"&gt;<a href="http://fivehundred.io?syntax=<?php echo $syntax; ?>">Use a query string to set the syntax style</a>&lt;/a&gt;
+	<a href="http://fivehundred.io">&lt;a href="http://fivehundred.io"&gt;More&lt;/a&gt;</a>
 
-	&lt;a href="http://gooseweb.io"&gt;<a href="http://gooseweb.io">By Goose</a>&lt;/a&gt;
-	&lt;a href="https://github.com/goosehub/fivehundred"&gt;<a href="https://github.com/goosehub/fivehundred">GitHub</a>&lt;/a&gt;
-	&lt;a href="mailto:goosepostbox@gmail.com"&gt;<a href="mailto:goosepostbox@gmail.com">goosepostbox@gmail.com</a>&lt;/a&gt;
+	<a target="_blank" href="https://github.com/isagalaev/highlight.js/tree/master/src/styles">&lt;a href="http://fivehundred.io?syntax=<?php echo $syntax; ?>"&gt;Use a query string to set the syntax style&lt;/a&gt;</a>
 
-	&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;
-	&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;
-	&lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
+	<a target="_blank" href="http://gooseweb.io">&lt;a href="http://gooseweb.io"&gt;By Goose&lt;/a&gt;</a>
+	<a target="_blank" href="https://github.com/goosehub/fivehundred">&lt;a href="https://github.com/goosehub/fivehundred"&gtGitHub&lt;/a&gt;</a>
+	<a target="_blank" href="mailto:goosepostbox@gmail.com">&lt;a href="mailto:goosepostbox@gmail.com"&gt;goosepostbox@gmail.com&lt;/a&gt;</a>
+
+	<a target="_blank" href="resources/libraries/jquery-2.2.0.min.js">&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;</a>
+	<a target="_blank" href="resources/libraries/highlightjs-9.4.0.min.js">&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;</a>
+	<a target="_blank" href="resources/script.js">&lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;</a>
 	&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>

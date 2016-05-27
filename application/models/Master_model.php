@@ -7,7 +7,8 @@ Class master_model extends CI_Model
   {
     $this->db->select('*');
     $this->db->from('code');
-    $this->db->order_by('id', 'desc');
+    $this->db->order_by('id', 'random');
+    $this->db->limit('1024');
     $query = $this->db->get();
     $result = $query->result_array();
     return $result;
