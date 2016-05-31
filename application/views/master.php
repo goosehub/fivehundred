@@ -16,9 +16,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	&lt;head&gt;
 		&lt;meta charset=&quot;utf-8&quot;&gt;
 		&lt;title&gt;Five Hundred Internal Server Error&lt;/title&gt;
-		<a target="_blank" href="resources/libraries/highlightjs-9.4.0.min.css">&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/libraries/highlightjs-9.4.0.min.css&quot;&gt;</a>
-		<a target="_blank" href="resources/styles/<?php echo $syntax; ?>.css">&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/<?php echo $syntax; ?>.css&quot;&gt;</a>
-		<a target="_blank" href="resources/style.css">&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/style.css&quot;&gt;</a>
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/libraries/highlightjs-9.4.0.min.css&quot;&gt;
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/styles/<?php echo $syntax; ?>.css&quot;&gt;
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;resources/style.css&quot;&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
 
@@ -45,9 +45,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<a target="_blank" href="https://github.com/goosehub/fivehundred">&lt;a href="https://github.com/goosehub/fivehundred"&gtGitHub&lt;/a&gt;</a>
 	<a target="_blank" href="mailto:goosepostbox@gmail.com">&lt;a href="mailto:goosepostbox@gmail.com"&gt;goosepostbox@gmail.com&lt;/a&gt;</a>
 
-	<a target="_blank" href="resources/libraries/jquery-2.2.0.min.js">&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;</a>
-	<a target="_blank" href="resources/libraries/highlightjs-9.4.0.min.js">&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;</a>
-	<a target="_blank" href="resources/script.js">&lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;</a>
+	&lt;script src=&quot;resources/libraries/jquery-2.2.0.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;resources/libraries/highlightjs-9.4.0.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;resources/script.js&quot;&gt;&lt;/script&gt;
 	&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>
